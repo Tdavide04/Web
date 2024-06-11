@@ -12,21 +12,21 @@
   </head>
   <body>
     <h1>Hello, world!</h1>
-    <form>
+    <form action="https://www.booking.com/start.php" method = "get">
         <div class="form-row">
           <div class="form-group col-md-6">
-          <label for="fname">Nome</label>
-          <input type="text" class="form-control" id="inputnome" placeholder="Cognome">  
+          <label for="fname">Nome</label><br>
+          <input type="text" name="Nome" class="form-control" id="inputnome" placeholder="Nome">  
           </div>
         <div class="form-group">
           <label for="fcognome">Cogome</label>
-          <input type="text" class="form-control" id="inputcognome" placeholder="Cognome">
+          <input type="text" name="Cognome" class="form-control" id="inputcognome" placeholder="Cognome">
         </div>
         </div>
 
         <div class="form-group">
             <label for="fdata">Data di Nascita</label>
-            <input type="date" class="form-control" id="inputdata" placeholder="Data di Nascita">
+            <input type="date" name="Data" class="form-control" id="inputdata" placeholder="Data di Nascita">
         </div>
 
         <div class="form-group">
@@ -37,7 +37,7 @@
 
         <div class="form-group">
             <label for="findirizzo">Indirizzo</label>
-            <input type="text" class="form-control" id="inputindirizzo" placeholder="Indirizzo">
+            <input type="text" name="Sesso" class="form-control" id="inputindirizzo" placeholder="Indirizzo">
         </div>
 
         <div class="form-row">
@@ -49,7 +49,7 @@
         <div class="form-row">
           <div class="form-group col-md-6">
           <label for="fcodicefiscale">Codice Fiscale</label>
-          <input type="text" class="form-control" id="inputcodicefiscale" placeholder="Codice Fiscale" minlength="16" maxlength="16">  
+          <input type="text" name="Codice Fiscale" class="form-control" id="inputcodicefiscale" placeholder="Codice Fiscale" minlength="16" maxlength="16">  
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>
