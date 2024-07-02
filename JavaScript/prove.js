@@ -39,15 +39,13 @@ function parseIntMy(sNum)
     return null 
 }
 
-
-const prompt = require("prompt-sync")()
-var sPrimoNum = prompt("Inserisci il primo numero ")
-var bEsito = parseIntMy(sPrimoNum)
-if(bEsito == true)
-    console.log("Mi hai passato un numero")
-else 
-    console.log("Non mi hai passato un numero")
-
+const prompt = require('prompt-sync')();
+var sPrimoNum = prompt("Inserisci primo numero ");
+var iNum = parseIntMy(sPrimoNum);
+if(iNum != null)
+    console.log("Hai inserito" + iNum);
+else
+    console.log("Non sei riuscito ad inserire un numero");
 var sSecondoNum = prompt("Inserisci il secondo numero ")
 check(sSecondoNum)
 var iSecondNum = parseInt(sSecondoNum)
