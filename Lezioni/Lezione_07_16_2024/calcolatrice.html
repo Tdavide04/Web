@@ -52,9 +52,23 @@
     </style>
 <script>
     function digit(Num)
-    {
+    {   
+        if (Num == 0)
+        
+        {
+            document.form.monitor.value.lenght == 0
+            return
+        }
+        document.form.monitor.value = document.form.monitor.value + Num
         console.log("Ho premuto il tasto " + Num)
+
     }
+    function del()
+    {
+        document.form.monitor.value = ""
+    }
+
+    
 </script>
  </head >
         <body>
@@ -63,10 +77,7 @@
                 <h1>La mia calcolatrice</h1>
                     <br /><br /><br />
                     </p>
-            <div id="calcolatrice">
-                <form name="form">
-                    <input class="area" name="monitor"><!DOCTYPE html>
-
+                    
             <div id="calcolatrice">
                 <form name="form">
                     <input class="area" name="monitor" value="" placeholder="0">
@@ -104,12 +115,7 @@
                             <td><input type="button" value="," onclick="digit('.');"></td>
                             <td><input type="button" value="=" onclick="result();"></td>
                         </tr>
-						 <tr>
-                            <td><input type="button" value="0" onclick="digit(0);"></td>
-                            <td><input type="button" value="00" onclick="digit('00');"></td>
-                            <td><input type="button" value="," onclick="digit('.');"></td>
-                            <td><input type="button" value="=" onclick="result();"></td>
-                        </tr>
+						
                     </table>
                 </form>
             </div>
