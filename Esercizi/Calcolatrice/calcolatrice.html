@@ -61,11 +61,49 @@
         }
         document.form.monitor.value = document.form.monitor.value + Num
         console.log("Ho premuto il tasto " + Num)
-
     }
+
     function del()
     {
         document.form.monitor.value = ""
+    }
+
+    function ar(n) {
+        document.form.oper.value = n;
+        document.form.last.value = document.form.monitor.value;
+        document.form.monitor.value = '';
+        document.form.res.value = '';
+    }
+
+    function cancella() {
+        var temp = document.form.monitor.value;
+        document.form.monitor.value = temp.substring(0, temp.length - 1);
+    }
+
+    function result()
+     {
+        if (document.form.res.value != 'Y') {
+            if (document.form.monitor.value && document.form.oper.value && document.form.last.value) {
+
+                if (document.form.oper.value == 'p')
+                    pitagora(document.form.monitor.value, document.form.last.value );
+                else {
+                    document.form.monitor.value = eval(document.form.last.value + document.form.oper.value + document.form.monitor.value);
+                    document.form.res.value = 'Y';
+                }
+
+            }
+        }
+    }
+    function perc() {
+        if (document.form.res.value != 'Y') {
+            if (document.form.monitor.value && document.form.oper.value && document.form.last.value) {
+                document.form.monitor.value = (document.form.last.value / 100) * document.form.monitor.value;
+                if (document.form.oper.value == '*' || document.form.oper.value == '/') {
+                    document.form.res.value = 'Y';
+                }
+            }
+        }
     }
 
     
@@ -86,13 +124,13 @@
                     <input name="res" type="hidden" value="">
                     <table id="calc">
                         <tr>
-                            <td><input type="button" value="C" onclick="del();"></td>
+                            <td><input type="button" class="tastoFun" value="C" onclick="del();"></td>
                             <td><input type="button" value="◄" onclick="cancella();"></td>
                             <td><input type="button" value="%" onclick="perc();"></td>
                             <td><input type="button" value="&divide;" onclick="ar('/');"></td>
                         </tr>
                         <tr>
-                            <td><input type="button" class="tasto" value="7" onclick="digit(7);"></td>
+                            <td><input type="button" value="7" onclick="digit(7);"></td>
                             <td><input type="button" value="8" onclick="digit(8);"></td>
                             <td><input type="button" value="9" onclick="digit(9);"></td>
                             <td><input type="button" class="tastoFun" value="x" onclick="ar('*');"></td>
