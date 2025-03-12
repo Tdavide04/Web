@@ -5,6 +5,7 @@ import Esercizio2 from './Esercizio2';
 import Esercizio3 from './Esercizio3';
 import Esercizio4 from './Esercizio4';
 import Esercizio5 from './Esercizio5';
+import Hooks1 from './Hooks1';
 
 let App = () => {
   return (
@@ -14,6 +15,7 @@ let App = () => {
       <Esercizio3 />
       <Esercizio4 />
       <Esercizio5 />
+      <Hooks1 />
     </div>
   );
 }
