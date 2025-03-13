@@ -14,33 +14,33 @@ let cambiaColore = (id) => {
         <div className="row justify-content-center">
             <div className="col-sm-3 mb-3 mb-sm-3">
                 <div className="card">
-                    <img src="/home/user/VscodeprojectDavide/Web/Web3/NodeJS/test1/public/pic1.jpg" alt="Rosette Nebula" /> 
+                    <img src="Materiale/pic1.jpg" alt="Rosette Nebula" /> 
                     <div className="card-body">
                         <h5 className="card-title">Card title</h5>
-                        <p id='text' className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button className="btn btn-primary" onClick={() => {cambiaColore("text")}}>Cambia colore</button>
+                        <p id='text1' className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button className="btn btn-primary" onClick={() => {cambiaColore("text1")}}>Cambia colore</button>
                     </div>
                 </div>
             </div>
 
             <div className="col-sm-3 mb-3 mb-sm-3">
                 <div className="card">
-                    <img src="./public/Materiale/Abdul-Thomas_NGC2244-Rosette-Nebula-in-Monoceros_Leeds-UK_2024-mar-11-e1711776517298.jpg" alt="Rosette Nebula" /> 
+                    <img src="Materiale/pic2.jpg" alt="Rosette Nebula" /> 
                     <div className="card-body">
                         <h5 className="card-title">Card title</h5>
-                        <p id='text' className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button className="btn btn-primary" onClick={() => {cambiaColore("text")}}>Cambia colore</button>
+                        <p id='text2' className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button className="btn btn-primary" onClick={() => {cambiaColore("text2")}}>Cambia colore</button>
                     </div>
                 </div>
             </div>
 
             <div className="col-sm-3 mb-3 mb-sm-3">
                 <div className="card">
-                    <img src="./public/Materiale/Abdul-Thomas_NGC2244-Rosette-Nebula-in-Monoceros_Leeds-UK_2024-mar-11-e1711776517298.jpg" alt="Rosette Nebula" /> 
+                    <img src="Materiale/pic3.png" alt="Rosette Nebula" /> 
                     <div className="card-body">
                         <h5 className="card-title">Card title</h5>
-                        <p id='text' className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <button className="btn btn-primary" onClick={() => {cambiaColore("text")}}>Cambia colore</button>
+                        <p id='text3' className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <button className="btn btn-primary" onClick={() => {cambiaColore("text3")}}>Cambia colore</button>
                     </div>
                 </div>
             </div>
