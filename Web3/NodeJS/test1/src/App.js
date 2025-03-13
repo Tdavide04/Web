@@ -9,11 +9,12 @@ import Hooks1 from './Hooks1';
 import Hooks2 from './Hooks2';
 import Hooks3 from './Hooks3';
 import Contatore from './Contatore';
+import Esercizio6 from './Esercizio6';
 
 let App = () => {
   return (
     <div className="App">
-      <Esercizio1 tabellina = {5} />
+      {/* <Esercizio1 tabellina = {5} />
       <Esercizio2 />
       <Esercizio3 />
       <Esercizio4 />
@@ -22,6 +23,8 @@ let App = () => {
       <Hooks2 />
       <Hooks3 />
       <Contatore />
+       */}
+       <Esercizio6 />
     </div>
   );
 }
