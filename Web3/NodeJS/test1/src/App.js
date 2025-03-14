@@ -10,6 +10,9 @@ import Hooks2 from './Hooks2';
 import Hooks3 from './Hooks3';
 import Contatore from './Contatore';
 import Esercizio6 from './Esercizio6';
+import Esercizio7 from './Esercizio7';
+import Esercizio8 from './Esercizio8';
+import Calcolatrice from './Calcolatrice';
 
 let App = () => {
   return (
@@ -23,8 +26,11 @@ let App = () => {
       <Hooks2 />
       <Hooks3 />
       <Contatore />
-       */}
-       <Esercizio6 />
+      <Esercizio6 />
+      <Esercizio7 />
+      <Esercizio8 />
+      */}
+      <Calcolatrice />
     </div>
   );
 }
