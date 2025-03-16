@@ -13,6 +13,9 @@ import Esercizio6 from './Esercizio6';
 import Esercizio7 from './Esercizio7';
 import Esercizio8 from './Esercizio8';
 import Calcolatrice from './Calcolatrice';
+import Esercizio9 from './Esercizio9';
+import Esercizio10 from './Esercizio10';
+import Esercizio11 from './Esercizio11';
 
 let App = () => {
   return (
@@ -29,8 +32,11 @@ let App = () => {
       <Esercizio6 />
       <Esercizio7 />
       <Esercizio8 />
-      */}
       <Calcolatrice />
+      <Esercizio9 />
+      <Esercizio10 />
+      */}
+      <Esercizio11 />
     </div>
   );
 }
