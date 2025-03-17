@@ -38,7 +38,7 @@ let App = () => {
       <Esercizio10 />
       <Esercizio11 />
       */}
-      <Esercizio12 />
+      <Esercizio11 />
     </div>
   );
 }
